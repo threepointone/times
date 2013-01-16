@@ -36,6 +36,17 @@ console.log(newArr);
 
 ```
 
+## Tests
+install dependencies - 
+```
+npm install mocha -g
+npm install should
+```
+then
+```
+npm test
+```
+
 ## License
 
   MIT

@@ -13,6 +13,7 @@ module.exports = function(n, fn) {
     var times = isArray(n) ? n.length : n;
     var arr = isArray(n) ? n : [];
     var ret = [];
+    fn = fn || function(){};
 
     for(var i = 0; i < times; i++) {
         ret.push(fn(i, arr[i]));
