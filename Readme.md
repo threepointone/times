@@ -39,15 +39,14 @@ console.log(newArr);
 ## Tests
 install dependencies - 
 ```
-npm install mocha -g
-npm install should
+npm install
 ```
 then
 ```
 npm test
 ```
 
-[![Build Status](https://travis-ci.org/threepointone]/times.png)](https://travis-ci.org/threepointone/times)
+[![Build Status](https://travis-ci.org/threepointone/times.png)](https://travis-ci.org/threepointone/times)
 
 ## License
 
