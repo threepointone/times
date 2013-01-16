@@ -30,8 +30,8 @@ var newArr = times(arr, function(i, el){
 });
 console.log(newArr);
 
-// not bad.jpg
-   
+// notbad.jpg
+
 ```
 
 ## License
