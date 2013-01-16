@@ -1,0 +1,16 @@
+{
+  "author": "Sunil Pai <threepointone@gmail.com>",
+  "name": "times",
+  "description": "functional times",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/threepointone/times"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
