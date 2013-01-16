@@ -12,9 +12,11 @@
 
     },
   "scripts":{
-    "test":"mocha tests/test.js"
+    "test":"node_modules/.bin/mocha tests/test.js"
     },
-  "optionalDependencies": {},
+  "optionalDependencies": {
+    "mocha":"*"
+    },
   "engines": {
     "node": "*"
   }
