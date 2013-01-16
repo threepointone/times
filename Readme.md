@@ -22,6 +22,7 @@ var arr = times(10, function(i){
 	return i*2;
 });
 console.log(arr);
+// [0, 2, 4, 6, 8, 10, 12, 14, 16, 18] 
 
 // use as a .map replacement
 var newArr = times(arr, function(i, el){
@@ -29,6 +30,7 @@ var newArr = times(arr, function(i, el){
 	return el*2;
 });
 console.log(newArr);
+// [0, 4, 8, 12, 16, 20, 24, 28, 32, 36] 
 
 // notbad.jpg
 
