@@ -43,7 +43,7 @@ describe('times', function() {
         index.should.equal(5);
     });
 
-    it('should invoke named function, when string is passed to ', function(){
+    it('should invoke named function, when string is passed as second param', function(){
         var ctr = 0;
         var arr = times(5, function(i){
             return {
