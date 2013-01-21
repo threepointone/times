@@ -32,6 +32,10 @@ var newArr = times(arr, function(i, el){
 console.log(newArr);
 // [0, 4, 8, 12, 16, 20, 24, 28, 32, 36] 
 
+// use as a .invoke replacement.
+times(users, 'logout');
+// users[0].logout(); users[1].logout(); and so on. 
+
 // notbad.jpg
 
 ```

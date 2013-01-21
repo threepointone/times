@@ -13,6 +13,14 @@ module.exports = function(n, fn) {
     var times = isArray(n) ? n.length : n;
     var arr = isArray(n) ? n : [];
     var ret = [];
+    if('string' === typeof fn){
+        fn = (function(f){
+            return function(i){
+                return arr[i][f]();
+            };
+        }(fn));
+    }
+
     fn = fn || function(){};
 
     for(var i = 0; i < times; i++) {
