@@ -1,5 +1,5 @@
 // mocha tests
-var times = require('../index'),
+var times = require('./build'),
     __should = require('should');
 
 

@@ -9,10 +9,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-
+    "component": "*"
     },
   "scripts":{
-    "test":"node_modules/.bin/mocha tests/test.js"
+    "test":"node_modules/.bin/component build --out tests --standalone Attr && node_modules/.bin/mocha tests/test.js"
     },
   "optionalDependencies": {
     "mocha":"*",
