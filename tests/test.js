@@ -52,7 +52,6 @@ describe('times', function() {
                 }
             }
         });
-
         times(arr, 'fn');
         ctr.should.equal(5);
 
