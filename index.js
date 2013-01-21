@@ -13,15 +13,17 @@ module.exports = function(n, fn) {
     var times = isArray(n) ? n.length : n;
     var arr = isArray(n) ? n : [];
     var ret = [];
+
+    // check if .invoke 
     if('string' === typeof fn){
         fn = (function(f){
-            return function(i){
-                return arr[i][f]();
+            return function(i, el){
+                return el[f]();
             };
         }(fn));
     }
-
-    fn = fn || function(){};
+    // default iterator
+    fn = fn || function(i, el){ return el; };
 
     for(var i = 0; i < times; i++) {
         ret.push(fn(i, arr[i]));
