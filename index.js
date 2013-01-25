@@ -7,6 +7,7 @@ function(obj) {
 };
 
 module.exports = function(n, fn) {
+    var args = arguments;
     // combination forloop / map. 
     // compatible with regular _.times
     // WARNING - fn is called with (index, value), not the other (regular) way around
@@ -18,7 +19,7 @@ module.exports = function(n, fn) {
     if('string' === typeof fn){
         fn = (function(f){
             return function(i, el){
-                return el[f]();
+                return el[f].apply(el, Array.prototype.slice.call(args, 2));
             };
         }(fn));
     }

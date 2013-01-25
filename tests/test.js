@@ -57,4 +57,17 @@ describe('times', function() {
 
     });
 
+    it('should pass in rest of arguments to invoke', function(){
+        var arr = times(5, function(i){
+            return {
+                fn: function(one, two, three){
+                    one.should.eql(1);
+                    two.should.eql(2);
+                    three.should.eql(3);
+                }
+            }
+        });
+        times(arr, 'fn', 1, 2, 3);
+    });
+
 });
